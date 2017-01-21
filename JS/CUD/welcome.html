@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="https://www.gstatic.com/firebasejs/3.6.6/firebase.js"></script>
+    <script src="auth.js"></script>
+    <script>
+    initializeFireBase();
+    checkUserIsLoggedIn();    
+    </script>
+    <script src="db.js"></script>
+    <script>
+      fetchProducts();  
+    </script>
+</head>
+<body>
+    Welcome <span id="userid"></span>
+    <button onclick="doLogOut()">Logout</button>
+    <ul id="productList">
+        
+    </ul>
+</body>
+</html>
